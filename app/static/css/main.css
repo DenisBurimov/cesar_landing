@@ -85,9 +85,25 @@ header {
     display: flex;
 }
 
-.testing_item {
-    width: 100px;
-    height: 50px;
-    margin: 12px;
+.contact_input {
+    outline: none;
+    border: none;
+    border-radius: 60px;
+}
+
+.contact_input::placeholder {
+    color: #7D7D7D;
+    font-family: "Georgia";
+    font-size: 18px;
+}
+
+.submit_button {
+    width: 225px;
+    height: 56px;
+    margin: 10px;
     background-color: #D06224;
+    border-radius: 35px;
+    border: none;
+    font-size: 20px;
+    color: white;
 }
