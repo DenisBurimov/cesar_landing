@@ -83,9 +83,28 @@ header {
     background-color: white;
     border-radius: 60px;
     display: flex;
+    justify-content: space-between;
+}
+
+.input_wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.address_icon {
+    /* position: absolute; */
+    /* left: 32px;
+    top: 31px; */
+}
+
+.phone_icon {
+    position: absolute;
+    left: 32px;
+    top: 31px;
 }
 
 .contact_input {
+    margin-left: 32px;
     outline: none;
     border: none;
     border-radius: 60px;
@@ -93,6 +112,20 @@ header {
 
 .contact_input::placeholder {
     color: #7D7D7D;
+    font-family: "Georgia";
+    font-size: 18px;
+}
+
+.phone_input {
+    height: calc(100% - 24px);
+    margin-block: 12px;
+    margin-left: 23px;
+    padding-left: 48px;
+    border-left: 1px solid #929292;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
     font-family: "Georgia";
     font-size: 18px;
 }
