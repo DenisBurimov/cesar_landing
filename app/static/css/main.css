@@ -5,10 +5,13 @@ body {
     padding: 0;
 }
 
-.header_wrapper {
+header {
     width: 100%;
     position: relative;
     height: 890px;
+    background-image: url(../img/header.png);
+    background-position: center top;
+    background-size: cover;
 }
 
 .header_image {
