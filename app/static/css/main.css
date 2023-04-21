@@ -92,7 +92,7 @@ header {
 }
 
 .address_icon {
-    /* position: absolute; */
+    position: absolute;
     /* left: 32px;
     top: 31px; */
 }
@@ -104,9 +104,14 @@ header {
 }
 
 .contact_input {
-    margin-left: 32px;
-    outline: none;
+    height: calc(100% - 24px);
+    margin-block: 12px;
+    margin-left: 23px;
+    padding-left: 32px;
     border: none;
+    outline: none;
+    font-family: "Georgia";
+    font-size: 18px;
     border-radius: 60px;
 }
 
@@ -120,7 +125,7 @@ header {
     height: calc(100% - 24px);
     margin-block: 12px;
     margin-left: 23px;
-    padding-left: 48px;
+    padding-left: 32px;
     border-left: 1px solid #929292;
     border-top: none;
     border-right: none;
@@ -139,4 +144,5 @@ header {
     border: none;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
