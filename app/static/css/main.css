@@ -57,7 +57,7 @@ header {
     top: 178px;
     margin-inline: calc(50% - 485px);
     padding-top: 50px;
-    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.33);
 }
 
 .get_a_cash {
@@ -76,9 +76,18 @@ header {
     font-size: 24px;
 }
 
-.fake_form {
+.contact_form {
     width: 80%;
     height: 75px;
     margin-inline: 10%;
-    border: 1px solid white;
+    background-color: white;
+    border-radius: 60px;
+    display: flex;
+}
+
+.testing_item {
+    width: 100px;
+    height: 50px;
+    margin: 12px;
+    background-color: #D06224;
 }
