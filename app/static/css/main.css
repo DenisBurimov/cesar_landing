@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_wrapper {
+    width: 100%;
+    position: relative;
+    height: 890px;
+}
+
+.header_image {
+    width: 100%;
+    height: 890px;
+}
+
+.menu {
+    width: 90%;
+    margin-top: 32px;
+    margin-inline: 5%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    color: white;
+}
+
+.rno {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.southern_california_1 {
+    font-size: 16px;
+}
+
+.menu_left {
+    display: flex;
+    font-size: 20px;
+}
+
+.menu_item {
+    margin-inline: 24px;
+}
+
+.transparent_card {
+    width: 970px;
+    height: 472px;
+    position: absolute;
+    top: 178px;
+    margin-inline: calc(50% - 485px);
+    padding-top: 50px;
+    border: 1px solid white;
+}
+
+.get_a_cash {
+    margin-block: 23px;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+}
+
+.sell_your_house {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.fake_form {
+    width: 80%;
+    height: 75px;
+    margin-inline: 10%;
+    border: 1px solid white;
+}
