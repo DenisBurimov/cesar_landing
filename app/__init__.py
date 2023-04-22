@@ -3,8 +3,8 @@ import os
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-
 from flask_migrate import Migrate
+from flask_mail import Mail
 from werkzeug.exceptions import HTTPException
 from app.logger import log
 
@@ -12,6 +12,7 @@ from app.logger import log
 login_manager = LoginManager()
 db = SQLAlchemy()
 migrate = Migrate()
+mail = Mail()
 
 
 def create_app(environment="development"):
@@ -27,6 +28,7 @@ def create_app(environment="development"):
 
     # Instantiate app.
     app = Flask(__name__)
+    mail.init_app(app)
 
     # Set app config.
     env = os.environ.get("FLASK_ENV", environment)
