@@ -20,9 +20,9 @@
         <p class="southern_california_1">Southern California <b>#1</b> trusted homebuyer</p>
       </div>
       <div class="menu_left">
-        <p class="menu_item">About us</p>
-        <p class="menu_item">How it works</p>
-        <p class="menu_item">Reviews</p>
+        <a href="#" class="menu_item">About us</a>
+        <a href="#" class="menu_item">How it works</a>
+        <a href="#" class="menu_item">Reviews</a>
       </div>
     </div>
 
@@ -32,10 +32,6 @@
       <p class="sell_your_house">Sell Your House Fast To A Reputable Nationwide Homebuyer</p>
 
       <form action="/" method="post" class="contact_form">
-        <!-- <div class="input_wrapper">
-          <img class="address_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="contact_input", placeholder="Address") }}
-        </div> -->
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
           {{ form.address(class="contact_input", placeholder="Address") }}
@@ -47,7 +43,116 @@
         {{ form.submit(class="submit_button") }}
       </form>
     </div>
+    <div class="white_boxes_wrapper">
+      <div class="white_box box_submit">
+        <img class="steps_icon" src="{{ url_for('static', filename='img/step_icon_pencil.png') }}" alt="step_icon">
+        <div class="step_heading">Submit Your Info</div>
+        <p class="step_description">
+          One of our representatives from Real Neighborhood Offer will contact you to setup a no-obligation
+          consultation.
+        </p>
+      </div>
+
+      <div class="white_box box_talk">
+        <img class="steps_icon" src="{{ url_for('static', filename='img/step_icon_pencil.png') }}" alt="step_icon">
+        <div class="step_heading">Submit Your Info</div>
+        <p class="step_description">
+          One of our representatives from Real Neighborhood Offer will contact you to setup a no-obligation
+          consultation.
+        </p>
+      </div>
+
+      <div class="white_box box_offer">
+        <img class="steps_icon" src="{{ url_for('static', filename='img/step_icon_pencil.png') }}" alt="step_icon">
+        <div class="step_heading">Submit Your Info</div>
+        <p class="step_description">
+          One of our representatives from Real Neighborhood Offer will contact you to setup a no-obligation
+          consultation.
+        </p>
+      </div>
+    </div>
   </header>
+
+  <section class="about_us">
+    <div class="about_left">
+      <p class="about_us_heading">About us</p>
+      <p class="about_us_subheading">Real Neighborhood Offer</p>
+      <p class="about_us_subheading">Provides Options To Sell Your Home</p>
+      <p class="about_us_description">
+        Real Neighborhood Offer provides another option to sell your house fast. We buy houses with no listing fees. No
+        agent
+        commissions. And a quick, hassle-free closing process. You won’t have to worry about the hassle of repairs or
+        renovations.
+        <br>
+        <br>
+        Getting rid of the headache and hassle of dealing with an unwanted property is our service to you. Sell your
+        house fast
+        without the hassle of a traditional sale.
+        <br>
+        <br>
+        Some reasons our clients have sold their house as-is for a cash offer:
+      </p>
+
+      <div class="about_list">
+        <ul class="about_list_block">
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Inherited Horne</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Retirement</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Bad Tenants</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Expensive Repairs</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Damage</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Downsizing</p>
+          </li>
+        </ul>
+
+        <ul class="about_list_block">
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Inherited Horne</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Retirement</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Bad Tenants</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Expensive Repairs</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Damage</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
+            <p>Downsizing</p>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#" class="about_button">Get my offer</a>
+    </div>
+    <img src="{{ url_for('static', filename='img/about_img.png') }}" alt="about_img" class="about_img">
+  </section>
 </body>
 
 </html>

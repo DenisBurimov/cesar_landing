@@ -8,7 +8,7 @@ body {
 header {
     width: 100%;
     position: relative;
-    height: 890px;
+    height: 980px;
     background-image: url(../img/header.png);
     background-position: center top;
     background-size: cover;
@@ -48,6 +48,11 @@ header {
 
 .menu_item {
     margin-inline: 24px;
+    text-decoration: none;
+}
+
+.menu_item:visited {
+    color: inherit;
 }
 
 .transparent_card {
@@ -145,4 +150,118 @@ header {
     font-size: 20px;
     color: white;
     cursor: pointer;
+}
+
+.white_boxes_wrapper {
+    width: 970px;
+    margin-inline: calc(50% - 485px);
+    display: flex;
+    position: absolute;
+    bottom: -141px;
+}
+
+.white_box {
+    width: 304px;
+    height: 245px;
+    padding: 26px 39px;
+    background-color: white;
+    box-shadow: 0px 0px 9px rgba(148, 148, 148, 0.25);
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.white_box:not(:last-child) {
+    margin-right: 32px;
+}
+
+.steps_icon {
+    width: 60px;
+    height: 60px;
+}
+
+.step_heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.step_description {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.about_us {
+    width: 1300px;
+    margin-inline: calc(50% - 650px);
+    margin-top: 250px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.about_left {
+    padding-right: 75px;
+}
+
+.about_us_heading {
+    color: #D06224;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.about_us_subheading {
+    margin-block: 2px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.about_us_description {
+    font-family: "Georgia";
+    font-size: 20px;
+}
+
+.about_list {
+    font-family: "Georgia";
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about_list_block {
+    padding-left: 0;
+}
+
+.about_list_item {
+    display: flex;
+    align-items: center;
+}
+
+.about_check {
+    width: 12px;
+    height: 12px;
+}
+
+.about_list_item p {
+    margin-left: 8px;
+    margin-block: 6px;
+}
+
+.about_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    text-decoration: none;
+    background: #D06224;
+    border-radius: 35px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.about_img {
+    height: 718px;
 }
