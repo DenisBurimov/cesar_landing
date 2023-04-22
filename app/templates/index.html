@@ -271,13 +271,13 @@
       </div>
 
       <form action="/" method="post" class="footer_contact_form">
-        <div class="input_wrapper">
+        <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="contact_input", placeholder="Address") }}
+          {{ form.address(class="footer_contact_input", placeholder="Address") }}
         </div>
-        <div class="input_wrapper">
+        <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input", placeholder="Phone number") }}
+          {{ form.phone(class="footer_phone_input", placeholder="Phone number") }}
         </div>
         {{ form.submit(class="submit_button") }}
       </form>
