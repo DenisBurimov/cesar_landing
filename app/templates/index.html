@@ -140,11 +140,12 @@
           </li>
           <li class="about_list_item">
             <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check" class="about_check">
-            <p>
-              Bankruptcy
-              <br>
-              Health Issues
-            </p>
+            <p>Bankruptcy</p>
+          </li>
+          <li class="about_list_item">
+            <img src="{{ url_for('static', filename='img/about_check.png') }}" alt="about_check"
+              class="about_check health_item">
+            <p>Health Issues</p>
           </li>
         </ul>
       </div>
@@ -168,6 +169,68 @@
         Nevada, Colorado, Tennessee, Alabama, Ohio, North Carolina, South Carolina.
       </p>
     </div>
+  </section>
+
+  <section class="make_it_easy">
+    <div class="about_left">
+      <p class="about_us_heading">We make it easy</p>
+      <p class="about_us_subheading">Stress-Free Home Selling Process</p>
+      <p class="make_it_easy_description">
+        Selling your house as-is, or going the traditional route, it doesn’t have to be a difficult process. We make it
+        easy!
+        When you accept an offer from Real Neighborhood Offer, you can sell your house in 14 days, or more if you need
+        additional time, without the stress of:
+      </p>
+
+      <div class="about_list">
+        <ul class="about_list_block">
+          <p class="make_it_easy_list_heading">Traditional Process</p>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/cross_check.png') }}" alt="cross_check" class="cross_check">
+            <p>Meeting realtors</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/cross_check.png') }}" alt="cross_check" class="cross_check">
+            <p>Making expensive repairs</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/cross_check.png') }}" alt="cross_check" class="cross_check">
+            <p>Open houses and strangers in your home</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/cross_check.png') }}" alt="cross_check" class="cross_check">
+            <p>Needing to pack and move out on the home buyer’s schedule</p>
+          </li>
+        </ul>
+
+        <ul class="about_list_block">
+          <p class="make_it_easy_list_heading">Real Neighbourhood Offer</p>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/v_check.png') }}" alt="v_check" class="v_check">
+            <p>Selling the property independently</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/v_check.png') }}" alt="v_check" class="v_check">
+            <p>We cover repairs</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/v_check.png') }}" alt="v_check" class="v_check">
+            <p>No showings</p>
+          </li>
+          <li class="make_it_easy_item">
+            <img src="{{ url_for('static', filename='img/v_check.png') }}" alt="v_check" class="v_check">
+            <p>Having the flexibility to move out at your convenience.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="hr">
+    <img src="{{ url_for('static', filename='img/hr.png') }}" alt="hr" class="hr_img">
+    <p class="hr_text">What are you waiting for?</p>
+    <a href="#" class="hr_call">Call</a>
+    <a href="#" class="hr_button">Get my offer</a>
   </section>
 </body>
 
