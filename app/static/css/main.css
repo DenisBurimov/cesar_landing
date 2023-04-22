@@ -207,6 +207,7 @@ header {
     color: #D06224;
     font-family: "Montserrat";
     font-size: 20px;
+    font-weight: 500;
 }
 
 .about_us_subheading {
@@ -263,5 +264,26 @@ header {
 }
 
 .about_img {
+    width: 100%;
     height: 718px;
+}
+
+.explore {
+    width: 1300px;
+    margin-inline: calc(50% - 650px);
+    margin-top: 100px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.explore_img {
+    width: 640px;
+}
+
+.explore_description {
+    font-family: "Georgia";
+    font-size: 20px;
+    line-height: 23px;
+    /* margin-block: 32px; */
 }
