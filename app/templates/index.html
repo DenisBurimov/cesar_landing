@@ -237,6 +237,52 @@
     <p class="about_us_heading">Client reviews from Google</p>
     <p class="about_us_subheading">What They Say</p>
   </section>
+
+  <footer>
+    <div class="footer_left">
+      <div class="logo_container">
+        <img src="{{ url_for('static', filename='img/logo_header.png') }}" alt="logo" class="logo">
+        <p class="rno">real neighbourhood offer</p>
+      </div>
+      <p class="footer_left_description">
+        We are a real estate solutions and
+        <br>
+        investment firm that specializes in
+        <br>
+        helping homeowners get rid of
+        <br>
+        burdensome houses fast
+      </p>
+    </div>
+
+    <div class="footer_right">
+      <div class="footer_right_menu">
+        <ul class="footer_menu">
+          <li class="footer_menu_item">About us</li>
+          <li class="footer_menu_item">How it works</li>
+          <li class="footer_menu_item">Reviews</li>
+        </ul>
+
+        <ul class="footer_menu">
+          <li class="footer_menu_item">Contact us</li>
+          <li class="footer_menu_item">admin@realneighborhoodoffer.com</li>
+          <li class="footer_menu_item"><a href="tel:+17145846719">(714)-584-6719</a></li>
+        </ul>
+      </div>
+
+      <form action="/" method="post" class="footer_contact_form">
+        <div class="input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
+          {{ form.address(class="contact_input", placeholder="Address") }}
+        </div>
+        <div class="input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
+          {{ form.phone(class="phone_input", placeholder="Phone number") }}
+        </div>
+        {{ form.submit(class="submit_button") }}
+      </form>
+    </div>
+  </footer>
 </body>
 
 </html>
