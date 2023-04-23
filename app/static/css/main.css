@@ -196,7 +196,6 @@ header {
     margin-inline: calc(50% - 600px);
     overflow: hidden;
     margin-top: 250px;
-    display: flex;
     display: grid;
     grid-template-columns: 55% 45%;
 }
@@ -278,7 +277,6 @@ header {
     width: 1200px;
     margin-inline: calc(50% - 600px);
     margin-top: 100px;
-    display: flex;
     display: grid;
     grid-template-columns: 55% 45%;
 }
@@ -450,11 +448,14 @@ footer {
 .footer_contact_form {
     width: 100%;
     height: 75px;
-    /* margin-inline: 10%; */
     background-color: white;
     border-radius: 60px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer_contact_form_mobile {
+    display: none;
 }
 
 .footer_input_wrapper {
@@ -495,4 +496,107 @@ footer {
     outline: none;
     font-family: "Georgia";
     font-size: 18px;
+}
+
+@media screen and (max-width: 1080px) {
+    .menu {
+        width: 90%;
+        margin-top: 32px;
+        margin-inline: 5%;
+        position: absolute;
+        top: 0;
+        display: block;
+    }
+
+    .logo {
+        margin-inline: calc(50% - 90px);
+    }
+
+    .rno {
+        margin-inline: calc(50% - 93px);
+    }
+
+    .menu_left {
+        margin-top: 12px;
+    }
+
+    .menu_item {
+        font-size: 12px;
+    }
+
+    .transparent_card {
+        width: 326px;
+        height: 705px;
+        position: absolute;
+        top: 208px;
+        margin-inline: calc(50% - 175px);
+        padding-top: 50px;
+        padding-inline: 12px;
+    }
+
+    .get_a_cash {
+        font-size: 32px;
+        margin-block: 0;
+    }
+
+    .contact_form {
+        display: none;
+    }
+
+    .contact_form_mobile {
+        display: block;
+        background-color: white;
+        border-radius: 24px;
+        padding-block: 18px;
+    }
+
+    .submit_button_mobile {
+        width: 90%;
+        margin-inline: 5%;
+        height: 56px;
+        background-color: #D06224;
+        border-radius: 35px;
+        border: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .white_boxes_wrapper {
+        display: none;
+    }
+
+    .about_us {
+        display: none;
+    }
+
+    .explore {
+        display: none;
+    }
+
+    .make_it_easy {
+        display: none;
+    }
+
+    .client_reviews {
+        display: none;
+    }
+
+    footer {
+        padding-inline: 5%;
+        background-color: #1c1c1c;
+        display: block;
+    }
+
+    .footer_right_menu {
+        display: block;
+    }
+
+    .footer_contact_form {
+        display: none;
+    }
+
+    .footer_contact_form_mobile {
+        display: block;
+    }
 }

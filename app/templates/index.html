@@ -42,6 +42,18 @@
         </div>
         {{ form.submit(class="submit_button") }}
       </form>
+
+      <form action="/" method="post" class="contact_form_mobile">
+        <div class="input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
+          {{ form.address(class="contact_input", placeholder="Address") }}
+        </div>
+        <div class="input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
+          {{ form.phone(class="phone_input", placeholder="Phone number") }}
+        </div>
+        {{ form.submit(class="submit_button_mobile") }}
+      </form>
     </div>
     <div class="white_boxes_wrapper">
       <div class="white_box box_submit">
@@ -271,6 +283,18 @@
       </div>
 
       <form action="/" method="post" class="footer_contact_form">
+        <div class="footer_input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
+          {{ form.address(class="footer_contact_input", placeholder="Address") }}
+        </div>
+        <div class="footer_input_wrapper">
+          <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
+          {{ form.phone(class="footer_phone_input", placeholder="Phone number") }}
+        </div>
+        {{ form.submit(class="submit_button") }}
+      </form>
+
+      <form action="/" method="post" class="footer_contact_form_mobile">
         <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
           {{ form.address(class="footer_contact_input", placeholder="Address") }}
