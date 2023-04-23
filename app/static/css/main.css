@@ -692,6 +692,10 @@ footer {
         text-align: justify;
     }
 
+    .about_list_block {
+        padding-right: 5px;
+    }
+
     .explore {
         display: block;
         width: 99%;
@@ -793,5 +797,13 @@ footer {
 
     .footer_contact_form_mobile {
         display: block;
+    }
+
+    .footer_menu_item {
+        text-align: center;
+    }
+
+    .footer_left_description {
+        text-align: center;
     }
 }
