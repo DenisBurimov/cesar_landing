@@ -41,7 +41,7 @@ class User(db.Model, UserMixin, ModelMixin):
             return user
 
     def __repr__(self):
-        return f"<{self.id}: {self.username} ({self.role})>"
+        return f"<{self.id}: {self.username}>"
 
 
 class AnonymousUser(AnonymousUserMixin):
