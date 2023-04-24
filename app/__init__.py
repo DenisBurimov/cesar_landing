@@ -28,7 +28,6 @@ def create_app(environment="development"):
 
     # Instantiate app.
     app = Flask(__name__)
-    mail.init_app(app)
 
     # Set app config.
     env = os.environ.get("FLASK_ENV", environment)
@@ -40,6 +39,7 @@ def create_app(environment="development"):
     db.init_app(app)
     migrate.init_app(app, db)
     login_manager.init_app(app)
+    mail.init_app(app)
 
     # Register blueprints.
     app.register_blueprint(main_blueprint)
