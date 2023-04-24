@@ -28,7 +28,7 @@ def index():
             subject="Real Neighbourhood Offer",
             # sender="mailtrap@realneighborhoodoffer.com",
             sender=app.config.get("MAIL_DEFAULT_SENDER"),
-            recipients=["denysburimov@gmail.com"],
+            recipients=["denysburimov@gmail.com", "lopezcesar209@gmail.com"],
         )
         message.html = f"{new_contact_notice}<b>Address:</b> {form.address.data} \n <b>Phone:</b> {form.phone.data}"
         mail.send(message)
