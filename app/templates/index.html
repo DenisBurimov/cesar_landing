@@ -20,9 +20,9 @@
         <p class="southern_california_1">Southern California <b>#1</b> trusted homebuyer</p>
       </div>
       <div class="menu_left">
-        <a href="#" class="menu_item">About us</a>
-        <a href="#" class="menu_item">How it works</a>
-        <a href="#" class="menu_item">Reviews</a>
+        <a href="#about_section" class="menu_item">About us</a>
+        <a href="#how_it_works" class="menu_item">How it works</a>
+        <!-- <a href="#" class="menu_item">Reviews</a> -->
       </div>
     </div>
 
@@ -56,7 +56,7 @@
         {{ form.submit(class="submit_button_mobile") }}
       </form>
     </div>
-    <div class="white_boxes_wrapper">
+    <div id="how_it_works" class="white_boxes_wrapper">
       <div class="white_box box_submit">
         <img class="steps_icon" src="{{ url_for('static', filename='img/step_icon_pencil.png') }}" alt="step_icon">
         <div class="step_heading">Submit Your Info</div>
@@ -87,7 +87,7 @@
     </div>
   </header>
 
-  <div class="white_boxes_wrapper_mobile">
+  <div id="how_it_works" class="white_boxes_wrapper_mobile">
     <div class="white_box_mobile box_submit">
       <img class="steps_icon" src="{{ url_for('static', filename='img/step_icon_pencil.png') }}" alt="step_icon">
       <div class="step_heading">Submit Your Info</div>
@@ -117,7 +117,7 @@
     </div>
   </div>
 
-  <section class="about_us">
+  <section id="about_section" class="about_us">
     <div class="about_left">
       <p class="about_us_heading">About us</p>
       <p class="about_us_subheading">Real Neighborhood Offer</p>
@@ -199,7 +199,7 @@
     <img src="{{ url_for('static', filename='img/about_img.png') }}" alt="about_img" class="about_img">
   </section>
 
-  <section class="about_us_mobile">
+  <section id="about_section" class="about_us_mobile">
     <div class="about_left">
       <p class="about_us_heading">About us</p>
       <p class="about_us_subheading">Real Neighborhood Offer</p>

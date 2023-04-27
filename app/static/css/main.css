@@ -51,6 +51,7 @@ header {
 .menu_item {
     margin-inline: 24px;
     text-decoration: none;
+    color: white;
 }
 
 .menu_item:visited {
