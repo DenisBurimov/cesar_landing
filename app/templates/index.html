@@ -32,6 +32,7 @@
       <p class="sell_your_house">Sell Your House Fast To A Reputable Nationwide Homebuyer</p>
 
       <form action="/" method="post" class="contact_form">
+        {{ form.hidden_tag()}}
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
           {{ form.address(class="contact_input", placeholder="Address") }}
@@ -44,6 +45,7 @@
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
+        {{ form.hidden_tag()}}
         <div class="input_wrapper_mobile">
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/address_icon.png') }}"
             alt="phone_icon">
