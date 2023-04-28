@@ -48,6 +48,10 @@ header {
     font-size: 20px;
 }
 
+.menu_left_mobile {
+    display: none;
+}
+
 .menu_item {
     margin-inline: 24px;
     text-decoration: none;
@@ -564,6 +568,11 @@ footer {
     }
 
     .menu_left {
+        display: none;
+    }
+
+    .menu_left_mobile {
+        display: flex;
         margin-top: 12px;
         justify-content: center;
     }
