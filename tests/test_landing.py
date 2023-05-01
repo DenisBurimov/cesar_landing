@@ -24,7 +24,7 @@ def test_route(client: FlaskClient):
     response = client.get("/")
 
     assert response.status_code == 200
-    assert b"real neighbourhood offer" in response.data
+    assert b"real neighborhood offer" in response.data
     assert b"trusted homebuyer" in response.data
 
 
