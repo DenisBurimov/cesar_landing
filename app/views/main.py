@@ -45,11 +45,11 @@ def index():
     return render_template("index.html", form=form)
 
 
-@main_blueprint.route("/reviews")
+@main_blueprint.route("/reviews/")
 def reviews():
     return redirect(url_for("main.index"))
 
 
-@main_blueprint.route("/our-company")
+@main_blueprint.route("/our-company/")
 def our_company():
     return redirect(url_for("main.index"))
