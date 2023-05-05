@@ -43,3 +43,13 @@ def index():
         log(log.INFO, "Form submit failed")
         return render_template("index.html", form=form)
     return render_template("index.html", form=form)
+
+
+@main_blueprint.route("/reviews")
+def reviews():
+    return redirect(url_for("main.index"))
+
+
+@main_blueprint.route("/our-company")
+def our_company():
+    return redirect(url_for("main.index"))
