@@ -10,6 +10,7 @@
   <title>Real Neighborhood Offer</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link rel="icon" href="{{ url_for('static', filename='img/favicons/real_neighborhood_icon.png') }}">
+  <script src="{{ url_for('static', filename='js/popup.js') }}" defer></script>
 </head>
 
 <body>
@@ -44,13 +45,14 @@
         {{ form.hidden_tag()}}
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="contact_input", placeholder="Address") }}
+          {{ form.address(class="contact_input", placeholder="Address", id="contact-form_input-address") }}
         </div>
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input", placeholder="Phone number") }}
+          {{ form.phone(class="phone_input", placeholder="Phone number", id="contact-form_input-number") }}
         </div>
-        {{ form.submit(class="submit_button") }}
+        <!-- {{ form.submit(class="submit_button", id="get-my-offer_button") }} -->
+          <button type="button" class="submit_button", id="get-my-offer_button">Get my offer</button>
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
@@ -67,7 +69,7 @@
         {{ form.submit(class="submit_button_mobile") }}
       </form>
      
-      <div class="pop-up">
+      <div class="pop-up" id="pop-up_window">
         <h2 class="pop-up_title">
           Get A Cash Offer For Your Home Today!
         </h2>
@@ -76,7 +78,7 @@
           <div class="pop-up_input-wrapper">
             <label class="pop-up_label" for="">Property Address</label>
             <!-- <input class="pop-up_input" type="text" placeholder="The home you wish to sell"> -->
-            {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell") }}
+            {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell", id="pop-up-form_input-address") }}
           </div>
           <div class="pop-up_input-wrapper">
             <label class="pop-up_label" for="">First Name</label>
@@ -91,19 +93,19 @@
           <div class="pop-up_input-wrapper">
             <label class="pop-up_label" for="">Phone Number</label>
             <!-- <input class="pop-up_input" type="tel" placeholder="Best number to reach you out"> -->
-            {{ form_popup.number(class="pop-up_input", placeholder="Best number to reach you out") }}
+            {{ form_popup.number(class="pop-up_input", placeholder="Best number to reach you out", ) }}
           </div>
           <div class="pop-up_input-wrapper">
             <label class="pop-up_label pop-up_required-field" for="">Email</label>
             <!-- <input class="pop-up_input" type="email" placeholder="Best email to reach you out"> -->
-            {{ form_popup.email(class="pop-up_input", placeholder="Best email to reach you out") }}
+            {{ form_popup.email(class="pop-up_input", placeholder="Best email to reach you out", id="pop-up-form_input-number") }}
           </div>
           <div class="pop-up_input-wrapper">
             <label class="pop-up_label pop-up_required-field" for="">Message</label>
             <!-- <input class="pop-up_input" type="text" placeholder="Tell us how can we help"> -->
             {{ form_popup.message(class="pop-up_input", placeholder="Tell us how can we help") }}
           </div>
-          <button class="pop-up_button">Submit</button>
+          <button class="pop-up_button" id="pop-up_button">Submit</button>
         </form>
       </div>
 

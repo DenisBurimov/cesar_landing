@@ -55,5 +55,3 @@ def reviews():
 @main_blueprint.route("/our-company/")
 def our_company():
     return redirect(url_for("main.index"))
-
-

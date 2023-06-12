@@ -4,6 +4,6 @@ from wtforms.validators import DataRequired
 
 
 class ContactForm(FlaskForm):
-    address = StringField("Address", [DataRequired()])
-    phone = StringField("Phone", [DataRequired()])
+    address = StringField("Address")
+    phone = StringField("Phone")
     submit = SubmitField("Get my offer")

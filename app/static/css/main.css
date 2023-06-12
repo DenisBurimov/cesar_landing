@@ -11,7 +11,7 @@ header {
     position: relative;
    
     /* TODO height = 980px */
-    height: 1928px; 
+    height: 980px; 
     background-image: url(../img/header.png);
     background-position: center top;
     background-size: cover;
@@ -68,7 +68,7 @@ header {
     width: 970px;
 
     /* TODO heigth 472px */
-    height: 1420px;
+    height: 472px;
     position: absolute;
     top: 178px;
     margin-inline: calc(50% - 485px);
@@ -169,15 +169,28 @@ header {
 
 /* POP-UP FORM */
 
+/* Class to focus only Pop Up  window */
+
+.blur {
+   filter: blur(5px);
+}
+
+
 .pop-up {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 178px;
+    transform: translate();
     box-sizing: border-box;
-    width: 967px;
-    height: 948px;
+    width: 971px;
+    height: 949px;
     padding: 71px 160px 88px;
     background-image: url(../img/pop_up.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    filter: none;
 }
 
 .pop-up_title {
@@ -196,7 +209,7 @@ header {
     flex-direction: column;
     gap: 24px;
     color: white;
-    font-family: "Inter";
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
 }
