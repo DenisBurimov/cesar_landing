@@ -66,6 +66,47 @@
         </div>
         {{ form.submit(class="submit_button_mobile") }}
       </form>
+     
+      <div class="pop-up">
+        <h2 class="pop-up_title">
+          Get A Cash Offer For Your Home Today!
+        </h2>
+        <form action="/" class="pop-up_form">
+          {{ form.hidden_tag()}}
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label" for="">Property Address</label>
+            <!-- <input class="pop-up_input" type="text" placeholder="The home you wish to sell"> -->
+            {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell") }}
+          </div>
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label" for="">First Name</label>
+            <!-- <input class="pop-up_input" type="text" placeholder="Your name"> -->
+            {{ form_popup.first_name(class="pop-up_input", placeholder="Your name") }}
+          </div>
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label" for="">Last Name</label>
+            <!-- <input class="pop-up_input" type="text" placeholder="Your last name"> -->
+            {{ form_popup.last_name(class="pop-up_input", placeholder="Your last name") }}
+          </div>
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label" for="">Phone Number</label>
+            <!-- <input class="pop-up_input" type="tel" placeholder="Best number to reach you out"> -->
+            {{ form_popup.number(class="pop-up_input", placeholder="Best number to reach you out") }}
+          </div>
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label pop-up_required-field" for="">Email</label>
+            <!-- <input class="pop-up_input" type="email" placeholder="Best email to reach you out"> -->
+            {{ form_popup.email(class="pop-up_input", placeholder="Best email to reach you out") }}
+          </div>
+          <div class="pop-up_input-wrapper">
+            <label class="pop-up_label pop-up_required-field" for="">Message</label>
+            <!-- <input class="pop-up_input" type="text" placeholder="Tell us how can we help"> -->
+            {{ form_popup.message(class="pop-up_input", placeholder="Tell us how can we help") }}
+          </div>
+          <button class="pop-up_button">Submit</button>
+        </form>
+      </div>
+
     </div>
     <div id="how_it_works" class="white_boxes_wrapper">
       <div class="white_box box_submit">
