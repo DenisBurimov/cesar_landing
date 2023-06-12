@@ -177,7 +177,7 @@ header {
 
 
 .pop-up {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 999;
     top: 178px;

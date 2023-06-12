@@ -45,14 +45,14 @@
         {{ form.hidden_tag()}}
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="contact_input", placeholder="Address", id="contact-form_input-address") }}
+          {{ form.address(class="contact_input contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input", placeholder="Phone number", id="contact-form_input-number") }}
+          {{ form.phone(class="phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
         <!-- {{ form.submit(class="submit_button", id="get-my-offer_button") }} -->
-          <button type="button" class="submit_button", id="get-my-offer_button">Get my offer</button>
+          <button type="button" class="submit_button get-my-offer_button", id="get-my-offer_button">Get my offer</button>
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
@@ -472,13 +472,14 @@
         {{form.hidden_tag()}}
         <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="footer_contact_input", placeholder="Address") }}
+          {{ form.address(class="footer_contact_input contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="footer_phone_input", placeholder="Phone number") }}
+          {{ form.phone(class="footer_phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
-        {{ form.submit(class="submit_button") }}
+        <!-- {{ form.submit(class="submit_button") }} -->
+        <button type="button" class="submit_button get-my-offer_button">Get my offer</button>
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
