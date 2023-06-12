@@ -13,11 +13,12 @@ getOfferButton.addEventListener("click", () => {
   const popUpAddress = document.getElementById("pop-up-form_input-address").value = contactAddress
   const popUpNumber = document.getElementById("pop-up-form_input-number").value = contactNumber
 
-  bodyTag.className += " blur"
+  document.body.classList.add("blur");
+
 
   console.log("address", contactAddress)
-  console.log("number", contactNumber)
-  console.log("popAddress", popUpAddress)
+  console.log("window", popUpWindow)
+  console.log("body", bodyTag)
   return false;
 })
 

@@ -171,26 +171,51 @@ header {
 
 /* Class to focus only Pop Up  window */
 
-.blur {
-   filter: blur(5px);
+.blur > *:not(.pop-up){
+   filter: blur(2px) brightness(0.5);
 }
 
 
 .pop-up {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 999;
     top: 178px;
-    transform: translate();
+    left: 50%;
+    transform: translateX(-50%);
     box-sizing: border-box;
-    width: 971px;
-    height: 949px;
+    width: 972px;
+    height: 950px;
     padding: 71px 160px 88px;
+    font-family: "Montserrat";
+    color: white;
     background-image: url(../img/pop_up.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
     filter: none;
+}
+
+.pop-up_terms {
+    margin-bottom: 57px;
+    padding-bottom: 25px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pop-up_terms-description {
+    margin-bottom: 25px;
+}
+
+.pop-up_terms-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pop-up_terms-link {
+    font-size: 16px;
+    color: #fff;
 }
 
 .pop-up_title {
