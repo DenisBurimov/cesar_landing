@@ -15,20 +15,28 @@ main_blueprint = Blueprint("main", __name__)
 def index():
     form = ContactForm()
     form_popup = PopUpForm()
-    if form.validate_on_submit():
-        log(log.INFO, "Form submitted: [%s, %s]", form.address.data, form.phone.data)
-        contact: Contact = Contact.query.filter_by(address=form.address.data).first()
+    if form_popup.validate_on_submit():
+        log(
+            log.INFO,
+            "Form submitted: [%s, %s]",
+            form_popup.address.data,
+            form_popup.phone.data,
+        )
+        contact: Contact = Contact.query.filter_by(
+            address=form_popup.address.data
+        ).first()
         contact_notice = "Contact already exists in your database:"
         if not contact:
             log(log.INFO, "New contact has been saved to the database")
-            Contact(
+            new_contact = Contact(
                 address=form_popup.address.data,
                 phone=form_popup.phone.data,
                 first_name=form_popup.first_name.data,
                 last_name=form_popup.last_name.data,
                 email=form_popup.email.data,
                 message=form_popup.first_name.data,
-            ).save()
+            )
+            new_contact.save()
             contact_notice = "New contact has been saved to the database. "
         msg = Message(  # noqa F841
             subject="Real Neighbourhood Offer",

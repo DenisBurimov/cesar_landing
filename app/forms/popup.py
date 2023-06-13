@@ -5,11 +5,9 @@ from wtforms.validators import DataRequired
 
 class PopUpForm(FlaskForm):
     address = StringField("Property Address", [DataRequired()])
-    first_name = StringField("First name", [DataRequired()])
-    last_name = StringField("Last Name", [DataRequired()])
-    email = EmailField("Email", [DataRequired()])
-
-    # TODO Change to message
-    message = StringField("Message", [DataRequired()])
+    first_name = StringField("First name")
+    last_name = StringField("Last Name")
+    email = EmailField("Email")
+    message = StringField("Message")
     phone = StringField("Phone number", [DataRequired()])
     submit = SubmitField("Submit")
