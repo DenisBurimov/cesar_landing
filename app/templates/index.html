@@ -51,7 +51,6 @@
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
           {{ form.phone(class="phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
-        <!-- {{ form.submit(class="submit_button", id="get-my-offer_button") }} -->
           <button type="button" class="submit_button get-my-offer_button", id="get-my-offer_button">Get my offer</button>
       </form>
 
@@ -66,7 +65,6 @@
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
           {{ form.phone(class="phone_input_mobile contact-form_input-number", placeholder="Phone number") }}
         </div>
-        <!-- {{ form.submit(class="submit_button_mobile") }} -->
         <button type="button" class="submit_button_mobile get-my-offer_button", id="get-my-offer_button">Get my offer</button>
       </form>
     </div>
@@ -122,35 +120,28 @@
       {{ form.hidden_tag()}}
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label pop-up_required-field" for="">Property Address</label>
-        <!-- <input class="pop-up_input" type="text" placeholder="The home you wish to sell"> -->
         {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell", id="pop-up-form_input-address", required='required') }}
       </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label" for="">First Name</label>
-        <!-- <input class="pop-up_input" type="text" placeholder="Your name"> -->
         {{ form_popup.first_name(class="pop-up_input", placeholder="Your name") }}
       </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label" for="">Last Name</label>
-        <!-- <input class="pop-up_input" type="text" placeholder="Your last name" required> -->
         {{ form_popup.last_name(class="pop-up_input", placeholder="Your last name") }}
       </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label pop-up_required-field" for="">Phone Number</label>
-        <!-- <input class="pop-up_input" type="tel" placeholder="Best number to reach you out"> -->
         {{ form_popup.phone(class="pop-up_input", placeholder="Best number to reach you out", id="pop-up-form_input-number") }}
       </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label" for="">Email</label>
-        <!-- <input class="pop-up_input" type="email" placeholder="Best email to reach you out"> -->
         {{ form_popup.email(class="pop-up_input", placeholder="Best email to reach you out") }}
       </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label" for="">Message</label>
-        <!-- <input class="pop-up_input" type="text" placeholder="Tell us how can we help"> -->
         {{ form_popup.message(class="pop-up_input", placeholder="Tell us how can we help") }}
       </div>
-      <!-- <button class="pop-up_button" id="pop-up_button">Submit</button> -->
       {{ form.submit(class="pop-up_button", id="pop-up_button") }}
     </form>
   </div>
@@ -480,7 +471,6 @@
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
           {{ form.phone(class="footer_phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
-        <!-- {{ form.submit(class="submit_button") }} -->
         <button type="button" class="submit_button get-my-offer_button">Get my offer</button>
       </form>
 
@@ -495,7 +485,6 @@
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
           {{ form.phone(class="phone_input_mobile contact-form_input-number", placeholder="Phone number") }}
         </div>
-        <!-- {{ form.submit(class="submit_button_mobile") }} -->
         <button type="button" class="submit_button_mobile get-my-offer_button">Get my offer</button>
       </form>
     </div>

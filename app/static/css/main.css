@@ -163,8 +163,6 @@ header {
     cursor: pointer;
 }
 
-/* POP-UP FORM */
-
 /* Class to focus only Pop Up  window */
 .blur > *:not(.pop-up){
    filter: blur(2px) brightness(0.5);
