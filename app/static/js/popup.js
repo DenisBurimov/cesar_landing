@@ -1,5 +1,3 @@
-// Pop Up function
-
 const getOfferButton = document.querySelectorAll('.get-my-offer_button');
 const popUpButton = document.getElementById("pop-up_button");
 const popUpWindow = document.getElementById("pop-up_window");
@@ -37,6 +35,12 @@ getOfferButton.forEach(btn => {
 // })
 
 popUpButton.addEventListener("click", () =>{
+  const contactAddress = document.querySelectorAll(".contact-form_input-address");
+  const contactNumber = document.querySelectorAll(".contact-form_input-number");
+
+  contactAddress.forEach(val => {val.value = ""})
+  contactNumber.forEach(val => {val.value = ""})
+
   popUpWindow.style.display = "none";
   document.body.classList.remove("blur");
 });

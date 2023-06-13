@@ -8,6 +8,8 @@ class PopUpForm(FlaskForm):
     first_name = StringField("First name", [DataRequired()])
     last_name = StringField("Last Name", [DataRequired()])
     email = EmailField("Email", [DataRequired()])
+
+    # TODO Change to message
     message = StringField("Message", [DataRequired()])
-    number = StringField("Phone number", [DataRequired()])
+    phone = StringField("Phone number", [DataRequired()])
     submit = SubmitField("Submit")

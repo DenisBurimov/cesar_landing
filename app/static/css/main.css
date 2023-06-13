@@ -198,7 +198,7 @@ header {
 
 .pop-up_terms {
     margin-bottom: 57px;
-    padding-bottom: 25px;
+    padding: 5px 5px 25px;
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0.2);
 }
