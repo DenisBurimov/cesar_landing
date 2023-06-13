@@ -14,6 +14,11 @@ getOfferButton.forEach(btn => {
 
     popUpWindow.style.display = "block";
     document.body.classList.add("blur");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   })
 });
 
@@ -43,5 +48,3 @@ window.addEventListener('mouseup', (event) => {
     document.body.classList.remove("blur");
   }
 })
-
-

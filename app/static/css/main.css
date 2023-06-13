@@ -171,7 +171,7 @@ header {
 .pop-up {
     box-sizing: border-box;
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 999;
     top: 178px;
     left: 50%;
