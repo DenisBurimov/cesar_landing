@@ -173,7 +173,7 @@ header {
     display: none;
     position: absolute;
     z-index: 999;
-    top: 178px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 972px;
