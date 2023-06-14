@@ -10,9 +10,10 @@
   <title>Real Neighborhood Offer</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link rel="icon" href="{{ url_for('static', filename='img/favicons/real_neighborhood_icon.png') }}">
+  <script src="{{ url_for('static', filename='js/popup.js') }}" defer></script>
 </head>
 
-<body>
+<body class="">
   <header>
     <div class="menu">
       <div class="menu_right">
@@ -44,13 +45,13 @@
         {{ form.hidden_tag()}}
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="contact_input", placeholder="Address") }}
+          {{ form.address(class="contact_input contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input", placeholder="Phone number") }}
+          {{ form.phone(class="phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
-        {{ form.submit(class="submit_button") }}
+          <button type="button" class="submit_button get-my-offer_button", id="get-my-offer_button">Get my offer</button>
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
@@ -58,13 +59,13 @@
         <div class="input_wrapper_mobile">
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/address_icon.png') }}"
             alt="phone_icon">
-          {{ form.address(class="contact_input_mobile", placeholder="Address") }}
+          {{ form.address(class="contact_input_mobile contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="input_wrapper_mobile">
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input_mobile", placeholder="Phone number") }}
+          {{ form.phone(class="phone_input_mobile contact-form_input-number", placeholder="Phone number") }}
         </div>
-        {{ form.submit(class="submit_button_mobile") }}
+        <button type="button" class="submit_button_mobile get-my-offer_button", id="get-my-offer_button">Get my offer</button>
       </form>
     </div>
     <div id="how_it_works" class="white_boxes_wrapper">
@@ -97,6 +98,53 @@
       </div>
     </div>
   </header>
+
+  <div class="pop-up" id="pop-up_window">
+    <div class="pop-up_terms">
+      <p class="pop-up_terms-description">
+        By filling out the form below and pressing "Submit" you are directly consenting to receiving test messages, calls
+        and emails related to calls, offers or related information about the address which you have provided, allowing Real
+        Neighborhood Offer buy houses or affiliated parties and non affiliated to reach out to directly. Message
+        and Data Rates May Apply. Message Frequency May Vary.
+      </p>
+      <div class="pop-up_terms-links">
+        <a href="" class="pop-up_terms-link">
+          Terms and Conditions
+        </a>
+        <a href="" class="pop-up_terms-link">
+          Privacy Policy
+        </a>
+      </div>
+    </div>
+    <form action="/" class="pop-up_form" method="post">
+      {{ form.hidden_tag()}}
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label pop-up_required-field" for="">Property Address</label>
+        {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell", id="pop-up-form_input-address", required='required') }}
+      </div>
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label" for="">First Name</label>
+        {{ form_popup.first_name(class="pop-up_input", placeholder="Your name") }}
+      </div>
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label" for="">Last Name</label>
+        {{ form_popup.last_name(class="pop-up_input", placeholder="Your last name") }}
+      </div>
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label pop-up_required-field" for="">Phone Number</label>
+        {{ form_popup.phone(class="pop-up_input", placeholder="Best number to reach you out", id="pop-up-form_input-number") }}
+      </div>
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label" for="">Email</label>
+        {{ form_popup.email(class="pop-up_input", placeholder="Best email to reach you out") }}
+      </div>
+      <div class="pop-up_input-wrapper">
+        <label class="pop-up_label" for="">Message</label>
+        {{ form_popup.message(class="pop-up_input", placeholder="Tell us how can we help") }}
+      </div>
+      {{ form.submit(class="pop-up_button", id="pop-up_button") }}
+    </form>
+  </div>
 
   <div id="how_it_works_mobile" class="white_boxes_wrapper_mobile">
     <div class="white_box_mobile box_submit">
@@ -417,13 +465,13 @@
         {{form.hidden_tag()}}
         <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/address_icon.png') }}" alt="phone_icon">
-          {{ form.address(class="footer_contact_input", placeholder="Address") }}
+          {{ form.address(class="footer_contact_input contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="footer_input_wrapper">
           <img class="phone_icon" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="footer_phone_input", placeholder="Phone number") }}
+          {{ form.phone(class="footer_phone_input contact-form_input-number", placeholder="Phone number") }}
         </div>
-        {{ form.submit(class="submit_button") }}
+        <button type="button" class="submit_button get-my-offer_button">Get my offer</button>
       </form>
 
       <form action="/" method="post" class="contact_form_mobile">
@@ -431,13 +479,13 @@
         <div class="input_wrapper_mobile">
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/address_icon.png') }}"
             alt="phone_icon">
-          {{ form.address(class="contact_input_mobile", placeholder="Address") }}
+          {{ form.address(class="contact_input_mobile contact-form_input-address", placeholder="Address") }}
         </div>
         <div class="input_wrapper_mobile">
           <img class="phone_icon_mobile" src="{{ url_for('static', filename='img/phone_icon.png') }}" alt="phone_icon">
-          {{ form.phone(class="phone_input_mobile", placeholder="Phone number") }}
+          {{ form.phone(class="phone_input_mobile contact-form_input-number", placeholder="Phone number") }}
         </div>
-        {{ form.submit(class="submit_button_mobile") }}
+        <button type="button" class="submit_button_mobile get-my-offer_button" id="get-my-offer_button-bottom">Get my offer</button>
       </form>
     </div>
   </footer>
