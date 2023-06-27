@@ -102,22 +102,32 @@
   <div class="pop-up" id="pop-up_window">
     <div class="pop-up_terms">
       <p class="pop-up_terms-description">
-        By filling out the form below and pressing "Submit" you are directly consenting to receiving test messages, calls
+        By filling out the form below and pressing "Submit" you are directly consenting to receiving text messages, calls
         and emails related to calls, offers or related information about the address which you have provided, allowing Real
-        Neighborhood Offer buy houses or affiliated parties and non affiliated to reach out to directly. Message
+        Neighborhood Offer LLC or affiliated parties and non affiliated to reach out to directly. Message
         and Data Rates May Apply. Message Frequency May Vary.
       </p>
-      <div class="pop-up_terms-links">
-        <a href="" class="pop-up_terms-link">
-          Terms and Conditions
-        </a>
-        <a href="" class="pop-up_terms-link">
-          Privacy Policy
-        </a>
+      <div class="pop-up_terms-container">
+        <div class="pop-up_terms-links">
+          <a href="" class="pop-up_terms-link">
+            Terms and Conditions
+          </a>
+          <a href="" class="pop-up_terms-link">
+            Privacy Policy
+          </a>
+        </div>
       </div>
     </div>
     <form action="/" class="pop-up_form" method="post">
       {{ form.hidden_tag()}}
+      <div class="pop-up_terms-checkbox">
+        <p class="pop-up_terms-checkbox-optin">Opt-in</p>
+        <div class="pop-up_terms-checkbox-input">
+          <!-- <input  type="checkbox" name="popup-terms-checkbox" id="popup-terms-checkbox" required> -->
+          {{ form_popup.checkbox_terms(id="popup-terms-checkbox", required='required') }}
+          <label for="popup-terms-checkbox">Yes</label>
+        </div>
+      </div>
       <div class="pop-up_input-wrapper">
         <label class="pop-up_label pop-up_required-field" for="">Property Address</label>
         {{ form_popup.address(class="pop-up_input", placeholder="The home you wish to sell", id="pop-up-form_input-address", required='required') }}
